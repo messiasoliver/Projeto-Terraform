@@ -1,0 +1,26 @@
+Aqui está um exemplo de como instalar o Rancher para gerenciar o Kubernetes em um ambiente com Ubuntu:
+
+Instalar Docker:
+
+
+sudo apt-get update
+sudo apt-get install docker.io
+Iniciar o Docker:
+
+
+sudo systemctl start docker
+Baixar a imagem do Rancher:
+
+
+sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher:latest
+Acesse o endereço IP da sua máquina em um navegador e você verá a página de login do Rancher.
+
+Crie uma conta e faça login.
+
+No painel do Rancher, vá até a aba "Clusters" e clique em "Add Cluster".
+
+Siga as instruções na tela para instalar o Rancher no seu cluster do Kubernetes.
+
+Depois de instalado, você pode gerenciar o seu cluster do Kubernetes através do Rancher.
+
+Lembrando que é importante ler a documentação oficial para obter informações detalhadas sobre a instalação e configuração do Rancher.
