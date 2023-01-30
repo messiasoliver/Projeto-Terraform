@@ -1,0 +1,17 @@
+Aqui está um exemplo de como instalar o Grafana Loki em um ambiente com Kubernetes:
+
+Adicione o repositório oficial do Grafana ao Helm:
+
+helm repo add grafana https://grafana.github.io/helm-charts
+Atualize o repositório do Helm:
+
+helm repo update
+Instale o Grafana Loki usando o Helm:
+
+helm install loki grafana/loki
+
+Verifique se o Grafana Loki foi instalado com sucesso usando o comando:
+
+kubectl get pods
+Acesse o Grafana Loki através do endereço IP da sua máquina e a porta especificada na sua configuração do Helm.
+Lembrando que é importante ler a documentação oficial para obter informações detalhadas sobre a instalação e configuração do Grafana Loki.
