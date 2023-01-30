@@ -1,0 +1,3 @@
+No exemplo acima, estamos criando um PersistentVolume que vai armazenar os dados do Postgres. Em seguida, estamos criando uma StorageClass para permitir que os dados sejam armazenados com os parâmetros específicos. Depois, criamos um Deployment do Postgres com uma replica. O PersistentVolumeClaim é utilizado para solicitar o armazenamento para o PersistentVolume.
+
+Lembrando que é importante ajustar os valores para se adequarem à sua necessidade.
